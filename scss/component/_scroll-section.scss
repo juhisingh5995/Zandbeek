@@ -1,0 +1,129 @@
+.scroll-section {
+    min-height: 100vh;
+    background: #fff;
+    position: relative;
+
+    .scroll-wrap {
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+
+        .scroll-inner {
+            height: 100%;
+            text-align: center;
+
+            .scroll-image {
+                margin-top: 73px;
+                position: relative;
+                display: inline-block;
+                align-self: center;
+
+                &:hover {
+
+                    .scroll-image-wrap1 {
+                        img {
+                            transform: scale(1.05);
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+
+                    .scroll-image-wrap2 {
+                        img {
+                            transform: scale(0.9);
+                            transition: all 0.8s ease-in-out;
+                        }
+                    }
+
+                    .scroll-image-wrap3 {
+                        img {
+                            transform: scale(0.9);
+                            transition: all 0.8s ease-in-out;
+                        }
+                    }
+                }
+
+
+                .scroll-image-wrap1 {
+                    width: 566px;
+                    height: 320px;
+                    position: relative;
+                    z-index: 2;
+
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        z-index: 1;
+                        background-size: cover;
+                        transition: all 0.8s ease-in-out;
+                    }
+                }
+
+                .scroll-image-wrap2 {
+                    position: absolute;
+                    top: -73px;
+                    left: -166px;
+                    transition: transform 1.3s cubic-bezier(0.25, 1, 0.5, 1),
+                        -webkit-transform 1.3s cubic-bezier(0.25, 1, 0.5, 1);
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        transition: all 0.8s ease-in-out;
+                    }
+                }
+
+                .scroll-image-wrap3 {
+                    transition: transform 1.3s cubic-bezier(0.25, 1, 0.5, 1),
+                        -webkit-transform 1.3s cubic-bezier(0.25, 1, 0.5, 1);
+                    position: absolute;
+                    top: 82px;
+                    right: -176px;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        transition: all 0.8s ease-in-out;
+                    }
+                }
+
+            }
+
+            .scroll-text {
+
+                text-align: initial;
+                position: absolute;
+                left: 0;
+
+                h5 {
+                    color: #87877d;
+                    font-size: 15px;
+                    padding-top: 10px;
+                }
+
+                h2 {
+                    color: #000;
+
+                    font-weight: 400;
+                    font-size: 60px;
+                }
+
+                p {
+
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: #000;
+                }
+
+
+            }
+        }
+    }
+}
